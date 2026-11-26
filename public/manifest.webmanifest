@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "Marociasong | @eco",
+  "short_name": "Marociasong",
+  "description": "Official music and social media links for Marociasong.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "background_color": "#050608",
+  "theme_color": "#050608",
+  "icons": [
+    {
+      "src": "/icons/marociasong.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
