@@ -5,8 +5,7 @@
   "description": "Official music and social media links for Marociasong.",
   "start_url": "/",
   "scope": "/",
-  "display": "standalone",
-  "display_override": ["standalone", "minimal-ui"],
+  "display": "browser",
   "background_color": "#050608",
   "theme_color": "#050608",
   "icons": [
