@@ -197,7 +197,11 @@ function HomePage() {
           <p className="hero-caption">Official links · original platforms · follow Marociasong</p>
         </div>
       </section>
-      <ContributionWeekEmbed site="marociasong" />
+      <ContributionWeekEmbed
+        site="marociasong"
+        repository="Marociasong/Marociasong.github.io"
+        branch="main"
+      />
       {isAvatarOpen && (
         <div
           className="avatar-lightbox"
