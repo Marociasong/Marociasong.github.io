@@ -10,7 +10,6 @@ import {
   Github,
   House,
   Info,
-  Instagram,
   ListMusic,
   Music2,
   Moon,
@@ -18,6 +17,7 @@ import {
   PanelLeftOpen,
   PanelRightClose,
   PanelRightOpen,
+  Radio,
   ShieldCheck,
   Sun,
   UserPlus,
@@ -38,7 +38,6 @@ const ThreeBackground = lazy(() => import('./components/ThreeBackground'));
 
 const PROFILE_URL = 'https://github.com/Marociasong';
 const REPOSITORIES_URL = 'https://github.com/Marociasong?tab=repositories';
-const INSTAGRAM_URL = 'https://www.instagram.com/marociasong';
 const FACEBOOK_URL = 'https://www.facebook.com/profile.php?id=61590101694470';
 const YOUTUBE_URL = 'https://www.youtube.com/@marociasong';
 const TIKTOK_URL = 'https://www.tiktok.com/@marociasong';
@@ -99,12 +98,11 @@ function EcoLeftSidebar({ open, onClose }: { open: boolean; onClose: () => void 
             <a href="/" className="sidebar-link"><House size={18} /><span>Home</span><ChevronRight size={15} /></a>
             <a href="/about.html" className="sidebar-link"><Info size={18} /><span>About</span></a>
             <a href="/timeline.html" className="sidebar-link"><Clock3 size={18} /><span>Watch on YouTube</span></a>
-            <a href="/#official-channels" className="sidebar-link"><Instagram size={18} /><span>Official socials</span></a>
+            <a href="/#official-channels" className="sidebar-link"><Radio size={18} /><span>Official socials</span></a>
             <a href="/#listen" className="sidebar-link"><ListMusic size={18} /><span>Listen</span></a>
             <div className="sidebar-divider" />
             <a href={SOURCE_URL} className="sidebar-link" target="_blank" rel="noreferrer"><ArrowUpRight size={18} /><span>Website repository</span></a>
             <a href={PROFILE_URL} className="sidebar-link" target="_blank" rel="noreferrer"><Github size={18} /><span>GitHub profile</span></a>
-            <a href={INSTAGRAM_URL} className="sidebar-link" target="_blank" rel="noreferrer"><Instagram size={18} /><span>Instagram</span></a>
             <a href={PROTECTED_USERS_URL} className="sidebar-link"><UserPlus size={18} /><span>Protected users</span></a>
           </nav>
           <p className="sidebar-footnote">Official links for Marociasong.</p>
@@ -194,7 +192,6 @@ function HomePage() {
           <div className="hero-actions">
             <a className="primary-button" href={YOUTUBE_URL} target="_blank" rel="noreferrer"><Youtube size={17} /> Watch on YouTube <ArrowUpRight size={15} /></a>
             <GitHubFollowButton />
-            <a className="secondary-button" href={INSTAGRAM_URL} target="_blank" rel="noreferrer"><Instagram size={16} /> Instagram <ArrowUpRight size={15} /></a>
             <a className="secondary-button" href="#listen"><AudioLines size={16} /> Listen with me</a>
           </div>
           <p className="hero-caption">Official links · original platforms · follow Marociasong</p>
@@ -228,7 +225,6 @@ function HomePage() {
         <div className="section-heading"><span className="eyebrow">EXPLORE MAROCIASONG</span><h2>Music, videos, and updates.</h2><p>Choose an official channel to discover the latest posts and content directly from Marociasong.</p></div>
         <div className="feature-grid">
           <article className="feature-card"><span className="feature-icon"><Youtube size={22} /></span><h3>YouTube</h3><p>Watch videos and explore the official Marociasong channel.</p><a className="secondary-button" href={YOUTUBE_URL} target="_blank" rel="noreferrer">Open YouTube <ArrowUpRight size={15} /></a></article>
-          <article className="feature-card"><span className="feature-icon"><Instagram size={22} /></span><h3>Instagram</h3><p>Follow the official profile for updates and posts.</p><a className="secondary-button" href={INSTAGRAM_URL} target="_blank" rel="noreferrer">Open Instagram <ArrowUpRight size={15} /></a></article>
           <article className="feature-card"><span className="feature-icon"><Music2 size={22} /></span><h3>TikTok</h3><p>Find short-form videos on the official account.</p><a className="secondary-button" href={TIKTOK_URL} target="_blank" rel="noreferrer">Open TikTok <ArrowUpRight size={15} /></a></article>
         </div>
       </section>
@@ -282,7 +278,6 @@ function AboutPage() {
         <p>This is a discovery hub linking to the official Marociasong profiles. Music, videos, and posts are hosted and maintained by their respective platforms and account owners.</p>
         <div className="hero-actions">
           <a className="primary-button" href={YOUTUBE_URL} target="_blank" rel="noreferrer"><Youtube size={16} /> YouTube</a>
-          <a className="secondary-button" href={INSTAGRAM_URL} target="_blank" rel="noreferrer"><Instagram size={16} /> Instagram <ArrowUpRight size={15} /></a>
         </div>
       </section>
       <section className="content-section about-details">
