@@ -179,7 +179,7 @@ function HomePage() {
         <div className="hero-content">
           <p className="eyebrow">OFFICIAL MUSIC · VIDEOS · SOCIAL CHANNELS</p>
           <div className="hero-heading-row">
-            <h1>Hi, I’m <span>Marociasong.</span><br />Music made <span className="gradient-text">to be felt.</span></h1>
+            <h1>Hi, I’m <span>Marociasong.</span><br /><span className="gradient-text">I make music to be felt.</span></h1>
             <button
               className="hero-avatar-button"
               type="button"
@@ -194,6 +194,7 @@ function HomePage() {
             <a className="primary-button" href={YOUTUBE_URL} target="_blank" rel="noreferrer"><Youtube size={17} /> Watch on YouTube <ArrowUpRight size={15} /></a>
             <GitHubFollowButton />
             <a className="secondary-button" href={INSTAGRAM_URL} target="_blank" rel="noreferrer"><Instagram size={16} /> Instagram <ArrowUpRight size={15} /></a>
+            <a className="secondary-button" href="#listen"><AudioLines size={16} /> Listen with me</a>
           </div>
           <p className="hero-caption">Official links · original platforms · follow Marociasong</p>
         </div>
