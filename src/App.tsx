@@ -25,6 +25,7 @@ import {
   X,
 } from 'lucide-react';
 import MusicPlayer from './components/MusicPlayer';
+import ContributionWeekEmbed from './components/ContributionWeekEmbed';
 import PwaInstallButton from './components/PwaInstallButton';
 import GitHubFollowButton from './components/GitHubFollowButton';
 import TimelineVideo from './components/TimelineVideo';
@@ -199,6 +200,7 @@ function HomePage() {
           <p className="hero-caption">Official links · original platforms · follow Marociasong</p>
         </div>
       </section>
+      <ContributionWeekEmbed site="marociasong" />
       {isAvatarOpen && (
         <div
           className="avatar-lightbox"
